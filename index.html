@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CYLON.EXE Records</title>
+  <meta name="description" content="CYLON.EXE is an AI-powered record label creating original songs across genres." />
+  <style>
+    body { margin:0; font-family: system-ui, -apple-system, Arial, sans-serif; background:#0b0b0f; color:#fff; }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 56px 20px; }
+    .card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 28px; }
+    h1 { font-size: 44px; margin: 0 0 8px; letter-spacing: 1px; }
+    .tag { opacity: .85; margin: 0 0 18px; }
+    .btns { display:flex; flex-wrap:wrap; gap:12px; margin-top:14px; }
+    a.btn { text-decoration:none; color:#0b0b0f; background:#fff; padding:10px 14px; border-radius: 12px; font-weight: 600; }
+    a.ghost { background: transparent; color:#fff; border:1px solid rgba(255,255,255,0.22); }
+    section { margin-top: 22px; }
+    h2 { font-size: 18px; margin: 0 0 8px; opacity:.95; }
+    p { margin: 0 0 10px; line-height: 1.55; opacity:.9; }
+    ul { margin: 0; padding-left: 18px; opacity:.9; line-height: 1.6; }
+    .footer { margin-top: 28px; opacity:.65; font-size: 13px; }
+    .pill { display:inline-block; padding:6px 10px; border-radius: 999px; border:1px solid rgba(255,255,255,0.18); background: rgba(0,0,0,0.25); margin: 6px 8px 0 0; font-size: 13px; opacity:.9; }
+    .hr { height:1px; background: rgba(255,255,255,0.12); margin: 18px 0; }
+    code { background: rgba(255,255,255,0.08); padding: 2px 6px; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>CYLON.EXE</h1>
+      <p class="tag">AI-powered record label • genre-fluid • original releases</p>
+
+      <section>
+        <h2>About</h2>
+        <p>
+          CYLON.EXE is a forward-thinking record label built at the intersection of music and machine intelligence.
+          We create original songs using advanced AI systems, blending human taste with digital precision across any genre.
+        </p>
+        <div>
+          <span class="pill">AI songwriting</span>
+          <span class="pill">AI vocals</span>
+          <span class="pill">Experimental pop</span>
+          <span class="pill">Cinematic</span>
+          <span class="pill">Rap</span>
+          <span class="pill">Soul</span>
+        </div>
+      </section>
+
+      <div class="hr"></div>
+
+      <section>
+        <h2>Listen</h2>
+        <p>These are placeholders. Paste your real links in the file where you see <code>#</code>.</p>
+        <div class="btns">
+          <a class="btn" href="#" target="_blank" rel="noreferrer">Spotify</a>
+          <a class="btn ghost" href="#" target="_blank" rel="noreferrer">Apple Music</a>
+          <a class="btn ghost" href="#" target="_blank" rel="noreferrer">Amazon Music</a>
+          <a class="btn ghost" href="#" target="_blank" rel="noreferrer">YouTube</a>
+        </div>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>Add an email when you are ready.</p>
+        <p><strong>Email:</strong> youremail@example.com</p>
+      </section>
+
+      <div class="footer">
+        © <span id="y"></span> CYLON.EXE Records
+      </div>
+    </div>
+  </div>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
