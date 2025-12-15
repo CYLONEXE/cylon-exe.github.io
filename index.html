@@ -139,4 +139,60 @@
       <section>
         <h2>Contact</h2>
         <p>For inquiries, collaborations, or licensing.</p>
-        <p><strong>Email:</strong> jas
+        <p><strong>Email:</strong> jasonester [at] yahoo [dot] com</p>
+      </section>
+
+      <div class="divider"></div>
+
+      <!-- Buy Me a Coffee renders here -->
+      <div id="bmc-wrap" aria-label="Buy Me a Coffee button"></div>
+
+      <div class="footer">
+        © <span id="year"></span> CYLON.EXE Records
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    // footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <script>
+    // Buy Me a Coffee widget loader (more reliable on static sites)
+    (function () {
+      var wrap = document.getElementById("bmc-wrap");
+      if (!wrap) return;
+
+      var s = document.createElement("script");
+      s.type = "text/javascript";
+      s.src = "https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js";
+
+      // IMPORTANT: If your BMC username does not include a dot, change this to your real username
+      // Example: s.setAttribute("data-slug", "cylonexe");
+      s.setAttribute("data-name", "bmc-button");
+      s.setAttribute("data-slug", "CYLON.EXE");
+
+      s.setAttribute("data-color", "#FFDD00");
+      s.setAttribute("data-emoji", "");
+      s.setAttribute("data-font", "Cookie");
+      s.setAttribute("data-text", "Buy me a coffee");
+      s.setAttribute("data-outline-color", "#000000");
+      s.setAttribute("data-font-color", "#000000");
+      s.setAttribute("data-coffee-color", "#ffffff");
+
+      // If it fails to load, show a fallback link
+      s.onerror = function () {
+        wrap.innerHTML =
+          '<a class="btn ghost" href="https://www.buymeacoffee.com/" target="_blank" rel="noreferrer">Buy Me a Coffee</a>' +
+          '<div style="margin-top:10px; font-size:13px; opacity:.75; text-align:center;">' +
+          'If this button does not show, the username in <strong>data-slug</strong> is probably not correct.' +
+          '</div>';
+      };
+
+      wrap.appendChild(s);
+    })();
+  </script>
+</body>
+</html>
