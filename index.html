@@ -82,25 +82,30 @@
       margin: 28px 0;
     }
 
+    .support-wrap {
+      display: flex;
+      justify-content: center;
+      margin: 32px 0;
+    }
+
+    .support-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #FFDD00;
+      color: #000000;
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      border: 2px solid #000000;
+    }
+
     .footer {
       margin-top: 28px;
       font-size: 13px;
       opacity: 0.6;
       text-align: center;
-    }
-
-    /* Center the Buy Me a Coffee button container */
-    #bmc-wrap {
-      display: flex;
-      justify-content: center;
-      margin-top: 24px;
-    }
-
-    /* If the widget creates a container, try to center it too */
-    .bmc-btn-container {
-      display: flex !important;
-      justify-content: center !important;
-      width: 100% !important;
     }
   </style>
 </head>
@@ -131,9 +136,6 @@
           <a class="btn ghost" href="#" target="_blank" rel="noreferrer">Amazon Music</a>
           <a class="btn ghost" href="#" target="_blank" rel="noreferrer">YouTube</a>
         </div>
-        <p style="margin-top:12px; opacity:.75; font-size:13px;">
-          Tip: replace the <strong>#</strong> links above with your real artist links when you are ready.
-        </p>
       </section>
 
       <section>
@@ -144,8 +146,15 @@
 
       <div class="divider"></div>
 
-      <!-- Buy Me a Coffee renders here -->
-      <div id="bmc-wrap" aria-label="Buy Me a Coffee button"></div>
+      <div class="support-wrap">
+        <a
+          class="support-btn"
+          href="https://www.buymeacoffee.com/CYLON.EXE"
+          target="_blank"
+          rel="noreferrer">
+          ☕ Support CYLON.EXE
+        </a>
+      </div>
 
       <div class="footer">
         © <span id="year"></span> CYLON.EXE Records
@@ -153,66 +162,9 @@
 
     </div>
   </div>
-<div style="display:flex; justify-content:center; margin:32px 0;">
-  <a
-    href="https://www.buymeacoffee.com/CYLON.EXE"
-    target="_blank"
-    rel="noreferrer"
-    style="
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      background:#FFDD00;
-      color:#000000;
-      padding:12px 18px;
-      border-radius:12px;
-      font-weight:700;
-      text-decoration:none;
-      border:2px solid #000000;
-    ">
-    ☕ Support CYLON.EXE
-  </a>
-</div>
 
   <script>
-    // footer year
     document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-
-  <script>
-    // Buy Me a Coffee widget loader (more reliable on static sites)
-    (function () {
-      var wrap = document.getElementById("bmc-wrap");
-      if (!wrap) return;
-
-      var s = document.createElement("script");
-      s.type = "text/javascript";
-      s.src = "https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js";
-
-      // IMPORTANT: If your BMC username does not include a dot, change this to your real username
-      // Example: s.setAttribute("data-slug", "cylonexe");
-      s.setAttribute("data-name", "bmc-button");
-      s.setAttribute("data-slug", "CYLON.EXE");
-
-      s.setAttribute("data-color", "#FFDD00");
-      s.setAttribute("data-emoji", "");
-      s.setAttribute("data-font", "Cookie");
-      s.setAttribute("data-text", "Buy me a coffee");
-      s.setAttribute("data-outline-color", "#000000");
-      s.setAttribute("data-font-color", "#000000");
-      s.setAttribute("data-coffee-color", "#ffffff");
-
-      // If it fails to load, show a fallback link
-      s.onerror = function () {
-        wrap.innerHTML =
-          '<a class="btn ghost" href="https://www.buymeacoffee.com/" target="_blank" rel="noreferrer">Buy Me a Coffee</a>' +
-          '<div style="margin-top:10px; font-size:13px; opacity:.75; text-align:center;">' +
-          'If this button does not show, the username in <strong>data-slug</strong> is probably not correct.' +
-          '</div>';
-      };
-
-      wrap.appendChild(s);
-    })();
   </script>
 </body>
 </html>
