@@ -44,13 +44,13 @@
 
     h2 {
       font-size: 18px;
-      margin-bottom: 8px;
+      margin: 0 0 8px;
     }
 
     p {
       line-height: 1.55;
       opacity: 0.9;
-      margin-bottom: 10px;
+      margin: 0 0 10px;
     }
 
     .btns {
@@ -67,6 +67,7 @@
       padding: 10px 14px;
       border-radius: 12px;
       font-weight: 600;
+      display: inline-block;
     }
 
     .ghost {
@@ -87,6 +88,20 @@
       opacity: 0.6;
       text-align: center;
     }
+
+    /* Center the Buy Me a Coffee button container */
+    #bmc-wrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 24px;
+    }
+
+    /* If the widget creates a container, try to center it too */
+    .bmc-btn-container {
+      display: flex !important;
+      justify-content: center !important;
+      width: 100% !important;
+    }
   </style>
 </head>
 
@@ -101,4 +116,27 @@
         <h2>About</h2>
         <p>
           CYLON.EXE is a forward-thinking record label built at the intersection of music and machine intelligence.
-          We create original songs using advan
+          We create original songs using advanced AI systems, blending human taste with digital precision across genres.
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2>Listen</h2>
+        <p>Available on all major platforms.</p>
+        <div class="btns">
+          <a class="btn" href="#" target="_blank" rel="noreferrer">Spotify</a>
+          <a class="btn ghost" href="#" target="_blank" rel="noreferrer">Apple Music</a>
+          <a class="btn ghost" href="#" target="_blank" rel="noreferrer">Amazon Music</a>
+          <a class="btn ghost" href="#" target="_blank" rel="noreferrer">YouTube</a>
+        </div>
+        <p style="margin-top:12px; opacity:.75; font-size:13px;">
+          Tip: replace the <strong>#</strong> links above with your real artist links when you are ready.
+        </p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>For inquiries, collaborations, or licensing.</p>
+        <p><strong>Email:</strong> jas
